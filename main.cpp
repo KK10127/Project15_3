@@ -29,6 +29,13 @@
  *      Determine what kind of output best shows off the operation of these classes and write
  *      a program that produces that kind of output.
  *
+ *      ALGORITHM:
+ *      1. Create the sequence types.
+ *      2. Call printSeq on os.
+ *      3. Call sumSeq on os.
+ *      4. Call printSeq on es.
+ *      5. Call sumSeq on es
+ *
  *
  */
 #include <iostream>
@@ -105,11 +112,14 @@ public:
 
 int main() {
 
+    // greeting
     cout << "Welcome to the demo of project 3!" << endl << endl;
 
+    // create sequence types
     OddSequence os;
     EvenSequence es;
 
+    // call printSeq and sumSeq on both os and es
     cout << "ODD SEQUENCE: 1, 3, 5, 7, ...." << endl;
     os.printSeq(0,5);
     os.sumSeq(0,5);
@@ -118,6 +128,7 @@ int main() {
     es.printSeq(0,5);
     es.sumSeq(0,5);
 
+    // end
     cout << "\nThis concludes the demo for this project." << endl;
     return 0;
 }
